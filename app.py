@@ -1,9 +1,9 @@
 import streamlit as st
 from datetime import date, timedelta
-from utils import load_config, save_config, fetch_articles_from_rss
+from utils import load_config, save_config, fetch_articles
 import math
 
-# Zmenšení šířky o 20%
+# Zúžená šířka stránky
 PAGE_WIDTH = 1024
 st.set_page_config(page_title="Můj AI Digest", layout="wide")
 
@@ -75,7 +75,7 @@ if st.button("Načíst články"):
     kws = [k.strip() for k in keywords.split(";") if k.strip()]
     bls = [b.strip() for b in blacklist.split(";") if b.strip()]
 
-    articles = fetch_articles_from_rss(
+    articles = fetch_articles(
         urls, kws, bls, newest_date, oldest_date, max_articles=100
     )
     st.session_state["articles"] = articles

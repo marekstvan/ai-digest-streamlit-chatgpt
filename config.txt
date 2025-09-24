@@ -1,0 +1,8 @@
+[DEFAULT]
+sources = www.zive.cz ; www.cnews.cz ; www.root.cz ; www.pctuning.cz ; www.seznam.cz ; www.seznamzpravy.cz ; www.novinky.cz ; www.idnes.cz ; www.aktualne.cz ; www.hn.cz ; www.denik.cz ; www.ceskatelevize.cz ; www.nova.cz ; www.iprima.cz
+keywords = pojišťovnictví ; pojišťovna ; pojišťovny
+blacklist = zdravotní pojištění ; sociální pojištění
+newest_date = 2025-09-24
+oldest_date = 2024-09-24
+page_size = 10
+page_width = 1280

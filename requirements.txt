@@ -1,0 +1,5 @@
+streamlit
+configparser
+feedparser
+requests
+beautifulsoup4
